@@ -1,0 +1,6 @@
+<div class="pagination">
+  <button [disabled]="offset === 0" (click)="previousPage()">Anterior</button>
+  <button (click)="nextPage()" [disabled]="offset + 10 >= total_count">
+    Siguiente
+  </button>
+</div>

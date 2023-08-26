@@ -1,0 +1,9 @@
+<div class="w-full">
+  <gifs-search-box></gifs-search-box>
+  <gifs-card-list
+    [gifs]="gifs"
+    class="w-full"
+    [loadingGifs]="loadingGifs"
+  ></gifs-card-list>
+  <gifs-pagination class="flex w-full" *ngIf="!loadingGifs"></gifs-pagination>
+</div>

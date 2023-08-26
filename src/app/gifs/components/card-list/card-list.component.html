@@ -1,0 +1,13 @@
+<div class="loader__container" *ngIf="loadingGifs; else cargado">
+  <div class="loader"></div>
+</div>
+
+<ng-template #cargado>
+  <div class="gifs">
+    <gifs-gif-card
+      class="gif-card"
+      *ngFor="let gif of gifs"
+      [gif]="gif"
+    ></gifs-gif-card>
+  </div>
+</ng-template>

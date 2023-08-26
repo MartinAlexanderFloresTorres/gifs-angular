@@ -1,0 +1,16 @@
+<div class="asidebar">
+  <h3>GifsApp</h3>
+
+  <div>
+    <button
+      *ngFor="let tag of tags; index as i"
+      (click)="searchTag(tag)"
+      [class]="{
+        selected: i === 0
+      }"
+      [disabled]="i === 0"
+    >
+      <span>{{ tag | titlecase }}</span>
+    </button>
+  </div>
+</div>

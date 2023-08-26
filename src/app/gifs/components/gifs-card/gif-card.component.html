@@ -1,0 +1,12 @@
+<shared-lazy-image
+  [src]="
+    gif.images.downsized.url ||
+    gif.images.preview_gif.url ||
+    'assets/not-found.gif'
+  "
+  [alt]="gif.title || 'No tiene titulo'"
+></shared-lazy-image>
+
+<div class="gif-card-bottom" *ngIf="gif.title.length > 1">
+  <h3>{{ gif.title }}</h3>
+</div>

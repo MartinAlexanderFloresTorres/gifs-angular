@@ -1,0 +1,17 @@
+.search-box__titulo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  margin-bottom: 1px;
+}
+.search-box__input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #020202;
+  background: #f7f7f7;
+  border: 3px solid #fff;
+}
