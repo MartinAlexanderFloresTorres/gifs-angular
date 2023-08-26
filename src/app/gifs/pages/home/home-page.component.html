@@ -11,7 +11,7 @@
     *ngIf="!loadingGifs && gifs.length > 0"
   ></gifs-pagination>
 
-  <div class="bienvenida">
+  <div class="bienvenida" *ngIf="!loadingGifs && gifs.length === 0">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon icon-tabler icon-tabler-arrow-big-up-lines-filled"
