@@ -70,3 +70,52 @@ input {
 .mt-2 {
   margin-top: 20px;
 }
+/*=============== bienvenida ===============*/
+.bienvenida {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  min-height: calc(100vh - 130px);
+  animation: fade 1s ease-in-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bienvenida svg {
+  width: 100px;
+  height: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 50%;
+  animation: rotate 2s linear infinite alternate;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-60deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}
+.bienvenida p {
+  padding: 20px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #333;
+  text-align: center;
+  background: #fff;
+}
